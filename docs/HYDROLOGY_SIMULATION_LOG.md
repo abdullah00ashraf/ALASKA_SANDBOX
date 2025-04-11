@@ -14,3 +14,8 @@ This document tracks verified architectural iterations, feature additions, and p
 - **Status**: Verified & Integrated into `main`
 - **Timestamp**: `2025-03-06T10:03:07+0530`
 
+### [2025-04-11 16:36 IST] - `docs(models): add documentation for ArcticDEM 15s elevation format`
+- **Component**: Arctic Terrain & Gemini Multimodal Reasoner
+- **Status**: Verified & Integrated into `main`
+- **Timestamp**: `2025-04-11T16:36:13+0530`
+
