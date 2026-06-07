@@ -214,3 +214,8 @@ This document tracks verified architectural iterations, feature additions, and p
 - **Status**: Verified & Integrated into `main`
 - **Timestamp**: `2026-06-05T10:49:56+0530`
 
+### [2026-06-07 12:55 IST] - `docs(climate): add reference table for permafrost seasonal drift index`
+- **Component**: Arctic Terrain & Gemini Multimodal Reasoner
+- **Status**: Verified & Integrated into `main`
+- **Timestamp**: `2026-06-07T12:55:45+0530`
+
