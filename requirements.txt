@@ -1,0 +1,47 @@
+#Core APIs & LLMs (From ALASKA Architecture)
+
+groq==0.4.2
+google-generativeai==0.3.1
+
+#Environment & Requests
+
+python-dotenv==1.0.0
+httpx==0.27.2
+
+#Vector DB & Datasets
+
+chromadb==0.4.24
+kaggle
+
+#Hugging Face Integration (For Cloud/Local DB Sync)
+
+huggingface_hub>=0.20.2
+datasets>=2.16.1
+
+#Data Processing, Scaling & Ingestion (alaska_ingest.py)
+
+pandas==2.2.2
+numpy>=1.26.0
+openpyxl>=3.1.2     # Required for EM-DAT Excel (.xlsx) processing
+pyarrow>=14.0.1     # Optimized backend for scaling massive CSVs
+dask>=2023.12.1     # For parallel processing & scaling large datasets
+tqdm>=4.66.1        # Progress tracking for tensor injection loops
+
+#Advanced Scientific Data Formats (NASA GPM, Copernicus GloFAS)
+
+xarray>=2023.12.0   # N-D labeled arrays and datasets
+netCDF4>=1.6.5      # Reading NetCDF files from satellite/hydrology feeds
+
+#Geospatial Processing (Offline / Local .tif & maps)
+
+rasterio>=1.3.9
+geopandas>=0.14.3
+shapely>=2.0.2      # Geometry operations for spatial matrix
+
+#Data Augmentation & Local Neural Engine Training (Isolated Model)
+
+tensorflow>=2.15.0
+scikit-learn>=1.3.0
+joblib>=1.3.2
+imbalanced-learn>=0.11.0 # Balances rare extreme-flood datasets for Bi-LSTM
+scipy>=1.11.4            # Signal processing and matrix augmentations

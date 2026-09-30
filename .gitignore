@@ -1,0 +1,31 @@
+# Python Virtual Environments & Caches
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+ENV/
+env/
+
+# Environment Variables & API Secrets (CRITICAL: Isolates live Gemini/Groq keys)
+.env
+.env.*
+!.env.example
+
+# Large Geospatial Rasters & GeoTIFFs (>50MB / 100MB GitHub limit blockers)
+*.tif
+*.tiff
+data_matrix/static_archives/hydrosheds/*.tif
+data_matrix/static_archives/jrc_water/*.tif
+
+# Generated Output Matrices & Master Databases
+full_data/
+alaska_ingest_logs.csv
+*.parquet
+*.log
+
+# OS & IDE metadata
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
