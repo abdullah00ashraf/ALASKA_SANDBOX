@@ -2,6 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python: >=3.10](https://img.shields.io/badge/Python-3.10%2B-brightgreen.svg)](https://www.python.org/)
+[![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-alaska--arctic--hydrology--matrix-yellow.svg)](https://huggingface.co/datasets/abdullahashraf122/alaska-arctic-hydrology-matrix)
 [![Geospatial: Rasterio](https://img.shields.io/badge/Geospatial-Rasterio%20%7C%20GDAL-darkgreen.svg)](https://rasterio.readthedocs.io/)
 [![Format: Apache Parquet](https://img.shields.io/badge/Format-Apache%20Parquet-blue.svg)](https://arrow.apache.org/)
 
@@ -125,6 +126,25 @@ Place the acquired `.tif` files into `data_matrix/static_archives/hydrosheds/` a
 
 ---
 
-## 5. License
+## 5. 🤗 Preprocessed Harmonized Matrix on Hugging Face
+
+The compiled 50,000-point spatiotemporal feature matrix is published and versioned on Hugging Face:
+
+* **`alaska-arctic-hydrology-matrix`** (1.97 MB Apache Parquet):  
+  [`https://huggingface.co/datasets/abdullahashraf122/alaska-arctic-hydrology-matrix`](https://huggingface.co/datasets/abdullahashraf122/alaska-arctic-hydrology-matrix)  
+  *Unifies HydroSHEDS elevation, JRC Global Surface Water occurrence percentages, water transition codes, IMD rainfall series, and demographic exposure proxies.*
+
+```python
+# Quickstart: Stream or Load via Hugging Face datasets
+from datasets import load_dataset
+
+dataset = load_dataset("abdullahashraf122/alaska-arctic-hydrology-matrix")
+print(dataset["train"])
+print("First record:", dataset["train"][0])
+```
+
+---
+
+## 6. License
 
 This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
